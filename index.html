@@ -1,7 +1,186 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head><meta charset="utf-8"><title>민교</title></head>
-<body style="font-family:sans-serif;text-align:center;margin-top:100px">
-  <h1>안녕하세요 👋</h1><p>GitHub Pages 테스트</p>
+<head>
+  <meta charset="UTF-8" />
+  <title>추민교 | 소개 페이지</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 상단 고정 네비게이션 -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">CHOO MIN GYO</a>
+      <ul class="menu">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 히어로 -->
+  <header id="home" class="hero">
+    <div class="container hero-flex">
+      <!-- 왼쪽: 프로필 사진 -->
+      <div class="profile-photo-wrap">
+        <img src="profile.jpg" alt="프로필 사진" class="profile-photo" />
+      </div>
+
+      <!-- 오른쪽: 미니카드 -->
+      <div class="profile-mini-card">
+        <h1>Exploring Ideas, Building the Future</h1>
+        <p class="subtitle">가천대학교 컴퓨터공학과 · 추민교</p>
+
+        <ul class="profile-info">
+          <li>👤 <strong>이름:</strong> 추민교</li>
+          <li>🎂 <strong>생년월일:</strong> 2003.12.10</li>
+          <li>🧠 <strong>MBTI:</strong> ISTP</li>
+          <li>💻 <strong>관심분야:</strong> 웹, AI, 데이터</li>
+          <li>📍 <strong>거주지:</strong> 경기도   수원시</li>
+          <li>✉️ <strong>이메일:</strong> <a href="mailto:mynngyo@naver.com">mynngyo@naver.com</a></li>
+        </ul>
+
+        <a class="btn" href="#projects">내 작업 보러가기</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Profile -->
+    <section id="profile" class="section">
+      <div class="container card">
+        <h2>Profile</h2>
+        <p>
+          새로운 기술을 배우는 걸 좋아하고, 사용자가 체감하는 가치를 만드는 것에 관심이 많습니다.
+          기초를 탄탄히 하되, 작게 만들어 빠르게 시험해보는 것을 선호합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container card">
+        <h2>About Me</h2>
+        <p>
+          새로운 기술을 배우는 걸 좋아하고, 사용자가 체감하는 가치를 만드는 것에 관심이 많습니다.
+          기초를 탄탄히 하되, 작게 만들어 빠르게 시험해보는 것을 선호합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- Vision -->
+    <section id="vision" class="section">
+      <div class="container card">
+        <h2>My Vision</h2>
+        <p>
+          AI 중심 세상에서 신뢰할 수 있는 기술을 만들고 싶습니다.
+          데이터를 존중하고, 사용자 경험을 우선으로 두는 개발자가 되는 것이 목표입니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Courses</h2>
+        <div class="grid">
+          <article class="card project">
+            <h3>C언어 미니 계산기</h3>
+            <p class="meta">C · Console</p>
+            <p>기본 사칙연산과 입력 검증을 지원하는 콘솔 프로그램. 포맷팅과 예외처리를 연습했습니다.</p>
+            <ul class="tags">
+              <li>#C</li><li>#입출력</li><li>#예외처리</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <h3>파이썬 데이터 요약기</h3>
+            <p class="meta">Python · Pandas</p>
+            <p>CSV를 불러와 기본 통계(평균, 표준편차)와 결측치 리포트를 한 번에 출력하는 스크립트.</p>
+            <ul class="tags">
+              <li>#Python</li><li>#Pandas</li><li>#EDA</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <h3>개인 소개 웹페이지</h3>
+            <p class="meta">HTML · CSS</p>
+            <p>ChatGPT와 협업해 설계한 반응형 소개 페이지. 네비게이션/그리드/디자인 시스템을 적용.</p>
+            <ul class="tags">
+              <li>#HTML</li><li>#CSS</li><li>#Responsive</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <h3>이산수학</h3>
+            <p class="meta">논리 · 그래프 · 조합론</p>
+            <p>논리적 사고와 알고리즘 설계의 기반 과목. 알고리즘 분석과 증명 연습에 활용.</p>
+            <ul class="tags">
+              <li>#논리</li><li>#그래프</li><li>#증명</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <h3>선형대수학</h3>
+            <p class="meta">벡터 · 행렬 · 고유값</p>
+            <p>머신러닝의 핵심 수학 기반. 데이터 표현과 차원축소, 계산 효율 분석에 활용.</p>
+            <ul class="tags">
+              <li>#벡터공간</li><li>#행렬분해</li><li>#ML기반</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container card">
+        <h2>Skills</h2>
+        <div class="skill-wrap">
+          <div class="skill">
+            <span>C</span><div class="bar"><i style="width:75%"></i></div>
+          </div>
+          <div class="skill">
+            <span>Python</span><div class="bar"><i style="width:70%"></i></div>
+          </div>
+          <div class="skill">
+            <span>HTML/CSS</span><div class="bar"><i style="width:65%"></i></div>
+          </div>
+          <div class="skill">
+            <span>Git/GitHub</span><div class="bar"><i style="width:55%"></i></div>
+          </div>
+        </div>
+        <p class="skill-note">퍼센트는 자기평가이므로 과제 제출 전 마음대로 조정하세요 :)</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container card">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+          <li>📧 이메일: <a href="mailto:mynngyo@naver.com">mynngyo@naver.com</a></li>
+          <li>🐙 GitHub: 추후 개설 예정</li>
+          <li>🔗 Instagram: 현재 페이지가 제 자기소개 겸 포트폴리오입니다.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Choo Min Gyo · All rights reserved
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.documentElement.style.scrollBehavior = 'smooth';
+  </script>
 </body>
 </html>
