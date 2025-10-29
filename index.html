@@ -1,204 +1,263 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>추민교 | 소개 페이지</title>
+  <title>추민교 | 소개</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="가천대학교 컴퓨터공학과 추민교의 개인 소개 페이지입니다." />
 
-  <!-- Open Graph (SNS 미리보기) -->
+  <!-- Open Graph -->
   <meta property="og:locale" content="ko_KR" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="추민교 | 소개 페이지" />
+  <meta property="og:title" content="추민교 | 소개" />
   <meta property="og:description" content="가천대학교 컴퓨터공학과 추민교의 개인 소개 페이지입니다." />
   <meta property="og:url" content="https://mynngyo.github.io/" />
-  <!-- 썸네일 이미지: 리포지토리 루트에 og-thumbnail.jpg 업로드 -->
   <meta property="og:image" content="https://mynngyo.github.io/og-thumbnail.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
-  <!-- Twitter Card (일부 메신저도 참고) -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="추민교 | 소개 페이지" />
   <meta name="twitter:description" content="가천대학교 컴퓨터공학과 추민교의 개인 소개 페이지입니다." />
   <meta name="twitter:image" content="https://mynngyo.github.io/og-thumbnail.jpg" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&family=Merriweather:ital,wght@1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="canonical" href="https://mynngyo.github.io/" />
 </head>
+
 <body>
-  <!-- 상단 고정 네비게이션 -->
-  <nav class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#home">CHOO MIN GYO</a>
-      <ul class="menu">
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#vision">Vision</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <!-- 상단 네비게이션 -->
+  <nav class="topnav">
+    <div class="inner">
+      <a href="#home">🖥 Home</a>
+      <a href="#about">🖥 About Me</a>
+      <a href="#travel">🖥 My Best Trip</a>
+      <a href="#favorite-movie">🖥 Favorite Movie</a>
+      <a href="#contact">🖥 Contact</a>
     </div>
   </nav>
 
-  <!-- 히어로 -->
+  <!-- Hero -->
   <header id="home" class="hero">
-    <div class="container hero-flex">
-      <!-- 왼쪽: 프로필 사진 -->
-      <div class="profile-photo-wrap">
-        <img src="profile.jpg" alt="프로필 사진" class="profile-photo" />
-      </div>
-
-      <!-- 오른쪽: 미니카드 -->
-      <div class="profile-mini-card">
-        <h1>Exploring Ideas, Building the Future</h1>
-        <p class="subtitle">가천대학교 컴퓨터공학과 · 추민교</p>
-
-        <ul class="profile-info">
-          <li>👤 <strong>이름:</strong> 추민교</li>
-          <li>🎂 <strong>생년월일:</strong> 2003.12.10</li>
-          <li>🧠 <strong>MBTI:</strong> ISTP</li>
-          <li>💻 <strong>관심분야:</strong> 웹, AI, 데이터</li>
-          <li>📍 <strong>거주지:</strong> 경기도 수원시</li>
-        </ul>
-
-        <a class="btn" href="#projects">내 작업 보러가기</a>
-      </div>
+    <div class="hero-frame">
+      <img src="profile-hero.jpg" alt="추민교 프로필 사진" class="hero-photo" />
+      <p class="hero-caption"><em>Hello! I'm MinGyo Choo</em></p>
     </div>
   </header>
 
   <main>
-    <!-- Profile -->
-    <section id="profile" class="section">
-      <div class="container card">
-        <h2>Profile</h2>
-        <p>
-          새로운 기술을 배우는 걸 좋아하고, 사용자가 체감하는 가치를 만드는 것에 관심이 많습니다.
-          기초를 탄탄히 하되, 작게 만들어 빠르게 시험해보는 것을 선호합니다.
-        </p>
-      </div>
-    </section>
-
     <!-- About -->
-    <section id="about" class="section">
-      <div class="container card">
-        <h2>About Me</h2>
-        <p>
-          새로운 기술을 배우는 걸 좋아하고, 사용자가 체감하는 가치를 만드는 것에 관심이 많습니다.
-          기초를 탄탄히 하되, 작게 만들어 빠르게 시험해보는 것을 선호합니다.
-        </p>
-      </div>
-    </section>
-
-    <!-- Vision -->
-    <section id="vision" class="section">
-      <div class="container card">
-        <h2>My Vision</h2>
-        <p>
-          AI 중심 세상에서 신뢰할 수 있는 기술을 만들고 싶습니다.
-          데이터를 존중하고, 사용자 경험을 우선으로 두는 개발자가 되는 것이 목표입니다.
-        </p>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
+    <section id="about" class="section band">
       <div class="container">
-        <h2 class="section-title">Courses</h2>
-        <div class="grid">
-          <article class="card project">
-            <h3>C언어</h3>
-            <p class="meta">C · Console</p>
-            <p>기본 사칙연산과 입력 검증을 지원하는 콘솔 프로그램 / 포맷팅과 예외처리</p>
-            <ul class="tags">
-              <li>#C</li><li>#입출력</li><li>#예외처리</li>
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <img src="about-photo.jpg" alt="추민교 사진" class="about-photo" />
+          <div class="about-card">
+            <ul class="about-list">
+              <li><strong>Name:</strong> MinGyo Choo</li>
+              <li><strong>Birth:</strong> 2003-12-10</li>
+              <li><strong>Age:</strong> 23</li>
+              <li><strong>University:</strong> Gachon Univ.</li>
+              <li><strong>Major:</strong> Computer Engineering</li>
+              <li><strong>MBTI:</strong> ISTP</li>
             </ul>
-          </article>
-
-          <article class="card project">
-            <h3>파이썬</h3>
-            <p class="meta">Python · Pandas</p>
-            <p>간결함과 범용성, 강력한 라이브러리 / AI 시대의 핵심 도구라는 점에서 현대 컴퓨터공학의 기본 언어</p>
-            <ul class="tags">
-              <li>#Python</li><li>#Pandas</li><li>#EDA</li>
-            </ul>
-          </article>
-
-          <article class="card project">
-            <h3>AI 입문 프로그래밍</h3>
-            <p class="meta">HTML · CSS</p>
-            <p>AI로 인한 미래 사회의 변화 이해 / ChatGPT와 프롬프트 엔지니어링 실습</p>
-            <ul class="tags">
-              <li>#HTML</li><li>#CSS</li><li>#Responsive</li>
-            </ul>
-          </article>
-
-          <article class="card project">
-            <h3>이산수학</h3>
-            <p class="meta">논리 · 그래프 · 조합론</p>
-            <p>논리적 사고와 알고리즘 설계의 기반 / 알고리즘 분석과 증명</p>
-            <ul class="tags">
-              <li>#논리</li><li>#그래프</li><li>#증명</li>
-            </ul>
-          </article>
-
-          <article class="card project">
-            <h3>선형대수학</h3>
-            <p class="meta">벡터 · 행렬 · 고유값</p>
-            <p>데이터와 계산의 언어 / 머신러닝의 핵심 기반 / 데이터 분석 및 딥러닝 계산 효율화</p>
-            <ul class="tags">
-              <li>#벡터공간</li><li>#행렬분해</li><li>#ML기반</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="container card">
-        <h2>Skills</h2>
-        <div class="skill-wrap">
-          <div class="skill">
-            <span>C</span><div class="bar"><i style="width:75%"></i></div>
-          </div>
-          <div class="skill">
-            <span>Python</span><div class="bar"><i style="width:70%"></i></div>
-          </div>
-          <div class="skill">
-            <span>HTML/CSS</span><div class="bar"><i style="width:65%"></i></div>
-          </div>
-          <div class="skill">
-            <span>Git/GitHub</span><div class="bar"><i style="width:55%"></i></div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Best Travel -->
+    <section id="travel" class="section band">
+      <div class="container">
+        <h2 class="section-title">My Best Trip</h2>
+
+        <div class="gallery travel">
+          <!-- 1 -->
+          <figure class="tile captioned">
+            <div class="photo-label">Dumbo Brooklyn, NewYork</div>
+            <img src="dumbo-1.jpg" alt="뉴욕 덤보" />
+          </figure>
+
+          <!-- 2-3 묶음 -->
+          <div class="tile-group">
+            <figure class="tile captioned">
+              <div class="photo-label">Niagara Falls, Canada</div>
+              <img src="niagara-2.jpg" alt="나이아가라 폭포" />
+            </figure>
+
+            <figure class="tile wide captioned">
+              <div class="photo-label">Niagara Falls · Rainbow, Canada</div>
+              <img src="niagara-bottom.jpg" alt="나이아가라 폭포 무지개" />
+            </figure>
+          </div>
+
+          <!-- 4 -->
+          <figure class="tile captioned">
+            <div class="photo-label">Statue of Liberty, NewYork</div>
+            <img src="liberty-3.jpg" alt="자유의 여신상" />
+          </figure>
+
+          <!-- 5 -->
+          <figure class="tile captioned">
+            <div class="photo-label">Széchenyi Chain Bridge, Budapest</div>
+            <img src="szechenyi-4.jpg" alt="세체니 다리" />
+          </figure>
+        </div>
+        <p class="photo-note">사진을 눌러보면 더 크게 보여요 ✨</p>
+      </div>
+    </section>
+
+    <!-- Favorite Movie -->
+<section id="favorite-movie" class="section band">
+  <div class="container">
+    <h2 class="section-title">Favorite Movie</h2>
+
+    <div class="movie-grid">
+      <!-- 🎥 영화 1 -->
+      <article class="movie-card">
+        <div class="movie-inner">
+          <div class="movie-poster-wrap">
+            <img src="john-1.jpg" alt="존윅 포스터" class="movie-poster" />
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">
+              <span class="movie-emoji">🎬</span>
+              존윅 4 (John Wick: Chapter 4, 2023)
+            </h3>
+            <p class="movie-desc">
+              전 세계 킬러 조직과의 끝없는 전쟁 속에서, 존 윅은 자유를 되찾기 위한 마지막 싸움에 나선다.
+              파리, 베를린, 오사카 등 전 세계를 무대로 펼쳐지는 압도적인 액션과 미학적인 영상미가 시리즈의 정점을 찍는다.
+              복수가 아닌 ‘해방’을 향한 여정을 완성하는 완벽한 결말.
+            </p>
+            <div class="rating-separator"></div>
+            <div class="rating-stars-large">
+              <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 🎥 영화 2 -->
+      <article class="movie-card">
+        <div class="movie-inner">
+          <div class="movie-poster-wrap">
+            <img src="newworld-2.jpg" alt="신세계 포스터" class="movie-poster" />
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">
+              <span class="movie-emoji">🎬</span>
+              신세계 (New World, 2013)
+            </h3>
+            <p class="movie-desc">
+              경찰의 비밀 임무로 범죄 조직에 잠입한 ‘이자성’.  
+              조직 내에서 실력과 신뢰를 쌓아 올라가지만, 보스의 사망 이후 경찰과 조직 사이에서 점점 깊은 갈등에 빠진다.  
+              감정선과 음악, 연출이 완벽히 어우러진 한국 느와르의 대표작.
+            </p>
+            <div class="rating-separator"></div>
+            <div class="rating-stars-large">
+              <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
     <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container card">
-        <h2>Contact</h2>
-        <ul class="contact-list">
+    <section id="contact" class="section band">
+      <div class="container contact-card">
+        <h2 class="section-title">Contact</h2>
+        <ul>
           <li>📧 e-mail: <a href="mailto:mynngyo@naver.com">mynngyo@naver.com</a></li>
-          <li>🐙 GitHub: <a href="https://mynngyo.github.io/" target="_blank">mynngyo.github.io</a></li>
-          <li>🔗 Instagram: <a href="https://bit.ly/mynngyo" target="_blank">@mynngyo</a></li>
+          <li>🐙 GitHub: <a href="https://mynngyo.github.io/" target="_blank" rel="noopener">mynngyo.github.io</a></li>
+          <li>🔗 Instagram: <a href="https://bit.ly/mynngyo" target="_blank" rel="noopener">@mynngyo</a></li>
         </ul>
       </div>
     </section>
   </main>
 
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog">
+    <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+  </div>
+
   <footer class="footer">
-    <div class="container">
-      © <span id="year"></span> Choo Min Gyo · All rights reserved
-    </div>
+    © <span id="year"></span> Choo Min Gyo · All rights reserved
   </footer>
 
   <script>
+    // 하단 연도 & 부드러운 스크롤
     document.getElementById('year').textContent = new Date().getFullYear();
     document.documentElement.style.scrollBehavior = 'smooth';
+
+    // ============ Lightbox ============
+    const overlay = document.getElementById('lightbox');
+    const btnClose = document.getElementById('lbClose');
+
+    let activeGhost = null;
+    let lastRect = null;
+
+    function openZoom(imgEl){
+      lastRect = imgEl.getBoundingClientRect();
+
+      const ghost = imgEl.cloneNode();
+      ghost.className = 'zoom-ghost';
+      ghost.style.left   = `${lastRect.left}px`;
+      ghost.style.top    = `${lastRect.top}px`;
+      ghost.style.width  = `${lastRect.width}px`;
+      ghost.style.height = `${lastRect.height}px`;
+      document.body.appendChild(ghost);
+      activeGhost = ghost;
+
+      overlay.classList.add('open');
+      document.body.classList.add('noscroll');
+
+      const vw = window.innerWidth, vh = window.innerHeight;
+      const naturalW = imgEl.naturalWidth || lastRect.width;
+      const naturalH = imgEl.naturalHeight || lastRect.height;
+      const maxW = Math.min(vw * 0.92, naturalW);
+      const maxH = Math.min(vh * 0.92, naturalH);
+      const scale = Math.min(maxW / lastRect.width, maxH / lastRect.height);
+      const tx = (vw - lastRect.width * scale)/2 - lastRect.left;
+      const ty = (vh - lastRect.height* scale)/2 - lastRect.top;
+
+      requestAnimationFrame(()=>{
+        ghost.style.transform = `translate3d(${tx}px,${ty}px,0) scale(${scale})`;
+      });
+    }
+
+    function closeZoom(){
+      if(!activeGhost || !lastRect){
+        overlay.classList.remove('open');
+        document.body.classList.remove('noscroll');
+        return;
+      }
+      activeGhost.classList.add('closing');
+      activeGhost.style.transform = `translate3d(0,0,0) scale(1)`;
+
+      activeGhost.addEventListener('transitionend', () => {
+        activeGhost.remove();
+        activeGhost = null;
+        overlay.classList.remove('open');
+        document.body.classList.remove('noscroll');
+        lastRect = null;
+      }, { once:true });
+    }
+
+    document.querySelectorAll('.gallery img').forEach(img=>{
+      img.addEventListener('click',()=> openZoom(img));
+    });
+    overlay.addEventListener('click',(e)=>{
+      if(e.target===overlay) closeZoom();
+    });
+    btnClose.addEventListener('click', closeZoom);
+    window.addEventListener('keydown',(e)=>{
+      if(e.key==='Escape') closeZoom();
+    });
   </script>
 </body>
 </html>
